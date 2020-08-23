@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.img-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 60vh;
+    width: 50vw;
+    overflow: hidden;
+}
+
+img{
+    height: 60vh;
+    width: 50vw;
+    object-fit: cover;
+}
+
+.next{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%,-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    transition: 0.3s ease-in;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.next:hover{
+    background: black;
+}
+
+.active{
+    opacity: 1;
+}
