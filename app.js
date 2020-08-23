@@ -19,15 +19,13 @@ const images = [
 const container = document.querySelector('.img-container');
 const img = document.querySelector('img');
 
-const btns = document.querySelectorAll('.btn');
 const nextBtn = document.querySelector('#nextBtn');
-let inter;
 
+let inter;
 let number = 1;
 
-// EVENT LISTENERS
+// Setting INTERVAL to run on page load
 const slideImg = setInterval(imageChange, 3000);
-
 
 // FUNCTIONS
 function imageChange(){
@@ -64,4 +62,3 @@ container.addEventListener('mouseover', () => {
 container.addEventListener('mouseout', () => {
     nextBtn.classList.remove('active');
 });
-// INVOKE FUNCTION
